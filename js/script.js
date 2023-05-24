@@ -1,9 +1,66 @@
-//getting required data through DOM API function
+// creating heading  for displaying-------------
+let textContainer = document.createElement("div");
+textContainer.classList.add("textContainer");
+let h1 = document.createElement("h1");
+h1.id = "title";
+h1.textContent = "DOM Task 01";
+let p = document.createElement("p");
+p.id = "description";
+p.textContent = "Pagination in DOM Manipulation";
+textContainer.append(h1, p);
+// console.log(textContainer);
+// console.log(textContainer.innerHTML);
+
+// creating Buttons for displaying-------------
+let DomWrapper = document.createElement("div");
+DomWrapper.classList.add("wrapper");
+
+let paginationBtnOne = document.createElement("div");
+paginationBtnOne.classList.add("paginationBtn", "one");
+let firstBtn = document.createElement("a");
+firstBtn.textContent = "First";
+firstBtn.setAttribute("data-set", "fir");
+let prevBtn = document.createElement("a");
+prevBtn.textContent = "Previous";
+prevBtn.setAttribute("data-set", "pre");
+paginationBtnOne.append(firstBtn, prevBtn);
+
+let DompaginationNumber = document.createElement("div");
+DompaginationNumber.id = "paginationNumber";
+
+let paginationBtnTwo = document.createElement("div");
+paginationBtnTwo.classList.add("paginationBtn", "two");
+let nextBtn = document.createElement("a");
+nextBtn.textContent = "Next";
+nextBtn.setAttribute("data-set", "nxt");
+let lastBtn = document.createElement("a");
+lastBtn.textContent = "Last";
+lastBtn.setAttribute("data-set", "lst");
+paginationBtnTwo.append(nextBtn, lastBtn);
+
+DomWrapper.append(paginationBtnOne, DompaginationNumber, paginationBtnTwo);
+
+// console.log(DomWrapper);
+// console.log(DomWrapper.innerHTML);
+
+// creating table for displaying-------------
+
+let TableContainer = document.createElement("div");
+TableContainer.classList.add("container");
+let DomTable = document.createElement("table");
+DomTable.id = "list";
+
+TableContainer.appendChild(DomTable);
+
+// console.log(TableContainer);
+// console.log(TableContainer.innerHTML);
+
+//Appending all create html element in body
+
+document.body.append(textContainer, DomWrapper, TableContainer);
+
+//getting required data through DOM API function & creating function for manipulating DOM
 let paginationNumbers = document.getElementById("paginationNumber");
-let firstBtn = document.getElementById("firstBtn");
-let prevBtn = document.getElementById("firstBtn");
-let nextBtn = document.getElementById("firstBtn");
-let lastBtn = document.getElementById("firstBtn");
 let list = document.getElementById("list");
 let wrapper = document.querySelector(".wrapper");
 
