@@ -1,10 +1,10 @@
-# [🔗 GUVI Day Fifteen task](https://suriya-k7.github.io/Guvi_Day_15_task_01_Pagination/)
+# [🔗 GUVI Day Fifteen task](https://pagination-sk7.netlify.app/)
 
 ## Task 01 : Pagination in DOM Manipulation
 
 ## Created task deployed on below links :
 
-<a href="https://suriya-k7-day-15-task-01-pagination.netlify.app/" target="_blank">Deployed in Netlify</a>
+<a href="https://pagination-sk7.netlify.app/" target="_blank">Deployed in Netlify</a>
 
 <a href="https://suriya-k7.github.io/Guvi_Day_15_task_01_Pagination/" target="_blank">Deployed in Github.io</a>
 
